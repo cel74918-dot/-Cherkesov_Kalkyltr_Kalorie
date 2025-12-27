@@ -10,4 +10,9 @@ Final_calories = calorie_calculator(protein, fat, carbs) # Общее колич
 print(f"Общее количество калорий в продукте: {Final_calories} ккал.")
 
 Total = float(input("Введите сколько всего калорий можно потребить"))
-
+if Total > Final_calories:
+    print(f"Отлично если хотите можете набрать ещё {Total - Final_calories} ккал если захотите!")
+elif Total < Final_calories:
+    print(f"Срочно уберите лишние {Final_calories - Total} ккал, иначе потолстеете!")
+elif Total == Final_calories:
+    print("У вас идеально сбалонсираванное питание!")
