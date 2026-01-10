@@ -1,3 +1,4 @@
+# Черкесов Артём тест
 def calorie_calculator(protein, fat, carbs): # Калькулятор калорий (Белки, Жиры, Углеводы)
     calories = 4 * protein + 9 * fat + 4 * carbs #
     return calories
@@ -11,8 +12,8 @@ print(f"Общее количество калорий в продукте: {Fin
 
 Total = float(input("Введите сколько всего калорий можно потребить"))
 if Total > Final_calories:
-    print(f"Отлично если хотите можете набрать ещё {Total - Final_calories} ккал если захотите!")
+    print(f"Отлично если хотите можете набрать ещё {Total - Final_calories} ккал, если захотите!")
 elif Total < Final_calories:
     print(f"Срочно уберите лишние {Final_calories - Total} ккал, иначе потолстеете!")
 elif Total == Final_calories:
-    print("У вас идеально сбалонсираванное питание!")
+    print("У вас идеально сбалансированное питание!")
