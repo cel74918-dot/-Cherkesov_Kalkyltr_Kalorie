@@ -22,33 +22,34 @@ elif Total == Final_calories:
     kkal = Total == Final_calories
     print(f"У вас идеально сбалансированное питание!")
 print(f"{"":>25}Ты хорошо держишься, побалуй себя фруктом. Выбери цифру от 1 до 5, купи и съешь рандомный фрукт(Это не помешает диете!!!).")
-fruits = int(input(f"{"":>5}Введи цифру от 1 до 5 : "))
-if fruits == 1:
+
+fruits = input(f"{"":>5}Введи цифру от 1 до 5 : ")
+if fruits == "1":
     print(f"{"":>25}Поздравляю ты выиграл яблоко.")
-elif fruits == 2:
+elif fruits == "2":
     print(f"{"":>25}Поздравляю ты выиграл грушу.")
-elif fruits == 3:
+elif fruits == "3":
     print(f"{"":>25}Поздравляю ты выиграл банан.")
-elif fruits == 4:
+elif fruits == "4":
     print(f"{"":>25}Поздравляю ты выиграл персик.")
-elif fruits == 5:
+elif fruits == "5":
     print(f"{"":>25}Поздравляю ты выиграл манго.")
-elif fruits != 1 and fruits != 2 and fruits != 3 and fruits != 4 and fruits != 5:
+elif fruits != "1" and fruits != "2" and fruits != "3" and fruits != "4" and fruits != "5":
     print(f"{"":>25} Неверно введена цифра! Пожалуйста введи цифру от 1 до 5")
-print(f"{"":>25}Пожалуйста подождите! Высчитываю ккал учитывая выигранный фрукт.")
-for i in range(fruits):
-    if fruits == 1:
+print(f"{"":>5}Пожалуйста подождите! Высчитываю ккал учитывая выигранный фрукт.")
+for i in fruits:
+    if fruits == "1":
         i = kkal + 52
         print(f"С учётом яблока в вашей еде {i} ккал")
-    elif fruits == 2:
+    elif fruits == "2":
         i = kkal + 57
         print(f"С учётом груши в вашей еде {i} ккал")
-    elif fruits == 3:
+    elif fruits == "3":
         i = kkal + 89
         print(f"С учётом банана в вашей еде {i} ккал")
-    elif fruits == 4:
+    elif fruits == "4":
         i = kkal + 39
         print(f"С учётом персика в вашей еде {i} ккал")
-    elif fruits == 5:
+    elif fruits == "5":
         i = kkal + 60
         print(f"С учётом манго в вашей еде {i} ккал")
